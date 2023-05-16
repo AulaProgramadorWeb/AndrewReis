@@ -1,0 +1,31 @@
+EXERCICIO 1
+alt = int(input ("Defina a altura "))
+larg = int(input ("Defina a largura "))
+area = int(alt * larg)
+print ("a área é igual a: ", area)
+
+
+EXERCICIO 2
+pao = int(input ("Quantidade de pães: "))
+sonho = int(input("Quantidade de sonhos: "))
+val_pao = float(pao * 0.5)
+val_sonho = float(sonho * 2.0)
+val_final = float(val_pao + val_sonho)
+print ("O valor final da compra é", val_final)
+
+EXERCICIO 3
+km = int(input("quantidade km/l: "))
+dist = int(input("Distancia: "))
+val_gas = int(input("Valor da gasolina: "))
+val_final = (km * val_gas) * dist
+print ("O custo total da viagem é ", val_final)
+
+EXERCICIO 4
+cent = int(input ("Valor em cm: "))
+print ("O valor em m é:", cent / 100)
+
+EXERCICIO 5
+valor_prod = float(input("Valor produto: "))
+descon = float(valor_prod * 0.15)
+valor_fin = float(valor_prod * 0.85)
+print ("O produto de valor R${}, tem desconto de {:.2f}, ficando o valor final igual a R${:.2f}".format(valor_prod, descon, valor_fin))
