@@ -1,0 +1,56 @@
+num_1 = int(input   ("Digite o primeiro numero da divisão: "))
+num_2 = int(input ("Digite o segundo numero da divisão: "))
+resul = num_1 / num_2
+if (resul > 0):
+    print("O resultado da divisão é: {}".format(resul));
+else:
+    print("O resultado é invalido");
+
+/////////////////////////////////////////////////////
+
+salario = float(input ("Digite o valor do salário: "))
+desconto = float(salario * 0.11)
+val_final = float(salario - desconto)
+if (desconto < 318.20):
+    print ("O seu sálario é {}. Com o desconto de {} o valor final fica {}".format(salario,desconto,val_final))
+else:
+    print("Seu salário é {}. Com o desconto máximo de 318,20, o valor final fica {}".format(salario,salario - 318.20))
+
+///////////////////////
+euro = float(input ("Digite o valor do euro: "))
+dolar = float(input ("Digite o valor do dolar: "))
+real = float(input ("Digite o valor do real: "))
+opt_1 = int(input ("Qual a moeda que será convertida?" "\n Digite 1 para REAL" "\n Digite 2 para DOLAR" "\n Digite 3 para EURO:" "\n"))
+opt_2 = int(input ("Para a moeda que será a conversão?" "\n Digite 1 para REAL" "\n Digite 2 para DOLAR" "\n Digite 3 para EURO:" "\n"))
+val_conv = float(input ("Digite o valor para fazer a conversão: "))
+if (opt_1 == 1) and (opt_2 == 2):
+    print ("O valor original em reais de {}, com a cotação atual de {}, convertido para dólar ficará {}".format(val_conv, dolar, val_conv*dolar))
+elif (opt_1 == 1) and (opt_2 == 3):
+    print ("O valor original em reais de {},  com a cotação atual de {}, convertido para euro ficará {}".format(val_conv, euro ,val_conv*euro))
+elif (opt_1 == 2) and (opt_2 == 1):
+    print ("O valor original em dólar de {},  com a cotação atual de {}, convertido para reais ficará {}".format(val_conv, real, val_conv*real))
+elif (opt_1 == 2) and (opt_2 == 3):
+    print ("O valor original em dólar de {},  com a cotação atual de {}, convertido para euro ficará {}".format(val_conv, euro, val_conv*euro))
+elif (opt_1 == 3) and (opt_2 == 1):
+    print ("O valor original em euro de {},  com a cotação atual de {}, convertido para reais ficará {}".format(val_conv, real, val_conv*real))
+elif (opt_1 == 3) and (opt_2 == 2):
+    print ("O valor original em euro de {},  com a cotação atual de {}, convertido para dolar ficará {}".format(val_conv, dolar, val_conv*dolar))
+else:
+    print ("Valor inválido")
+
+
+///////////////////////////////////////////
+
+idade = int(input ("Qual sua idade? "))
+if (idade <5):
+    print ("Você não pode participar da competição ainda bebê")
+elif idade >= 5 and idade <= 7:
+    print ("Você pode participar da competição na categoria Infantil A")
+elif idade >= 8 and idade <= 10:
+    print ("Você pode participar da competição na categoria Infantil B")
+elif idade >= 11 and idade <= 13:
+    print ("Você pode participar da competição na categoria Juvenil A")
+elif idade >= 14:
+    print ("Você pode participar da competição na categoria Senior")
+else :
+    print ("Valor invalido")
